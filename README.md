@@ -19,3 +19,4 @@ git clone git@github.com:funnybrum/esp8266-base.git
 
 ## Notes
 1) Uses https://github.com/StefanBruens/ESP8266_new_pwm for PWM. The pwm.c in the src folder is direct copy.
+2) The RTClib.cpp has been modified to work with SDA/SCL on pins 0 and 2.

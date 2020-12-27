@@ -7,6 +7,7 @@ WiFiManager wifi = WiFiManager(&logger, &settings.getSettings()->network);
 SystemCheck systemCheck = SystemCheck(&logger);
 WebServer webServer = WebServer(&logger, &settings.getSettings()->network);
 LEDDriver leds = LEDDriver();
+Clock rtc = Clock();
 
 void setup()
 { 
@@ -17,6 +18,7 @@ void setup()
     settings.begin();
     wifi.begin();
     webServer.begin();
+    rtc.begin();
 
     wifi.connect();
 }
@@ -25,5 +27,6 @@ void loop() {
     wifi.loop();
     webServer.loop();
     settings.loop();
+    rtc.loop();
     delay(100);
 }
