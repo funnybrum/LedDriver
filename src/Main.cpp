@@ -4,6 +4,7 @@ Logger logger = Logger();
 Settings settings = Settings();
 
 WiFiManager wifi = WiFiManager(&logger, &settings.getSettings()->network);
+SystemCheck systemCheck = SystemCheck(&logger);
 WebServer webServer = WebServer(&logger, &settings.getSettings()->network);
 LEDDriver leds = LEDDriver();
 
@@ -24,6 +25,5 @@ void loop() {
     wifi.loop();
     webServer.loop();
     settings.loop();
-
     delay(100);
 }
