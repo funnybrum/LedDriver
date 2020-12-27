@@ -1,5 +1,5 @@
 #include "Settings.h"
-#include "NoWiFi.h"
+#include "Main.h"
 
 Settings::Settings()
     :SettingsBase(&logger) {

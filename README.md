@@ -16,3 +16,6 @@ The project uses a common set of tools that are availabe in another repo - https
 cd lib
 git clone git@github.com:funnybrum/esp8266-base.git
 ```
+
+## Notes
+1) Uses https://github.com/StefanBruens/ESP8266_new_pwm for PWM. The pwm.c in the src folder is direct copy.

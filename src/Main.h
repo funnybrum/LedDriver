@@ -8,11 +8,12 @@
 #include "user_interface.h"
 
 #include "esp8266-base.h"
+#include "LEDDriver.h"
 
 #define HTTP_PORT 80
-#define HOSTNAME "no-wifi"
+#define HOSTNAME "led-driver"
 
 extern Logger logger;
 extern Settings settings;
 extern WiFiManager wifi;
-extern SystemCheck systemCheck;
+extern LEDDriver leds;
